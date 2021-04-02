@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<meta charset="utf-8">
+  		<title>My Company</title>
+  		<link rel = "icon" href ="images/icon.png" type = "image/x-icon">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="author" content="flip.hr">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+
+		<nav class="navbar navbar-collapse-s navbar-expand-md fixed-top">
+	    	
+	    	<div class="container">
+		    	<a class="navbar-brand" href="index.html"> <img src="images/logo.png" height="35px"></a>
+		      	
+		      	<button class="navbar-toggler" data-toggle="collapse" data-target="#main-menu">
+		        	<span class="navbar-toggler-icon"></span>
+		      	</button>
+
+	      		<div class="collapse navbar-collapse" id="main-menu">
+	        		<ul class="navbar-nav ml-auto">
+			        	<li class="nav-item active">
+			            	<a class="nav-link" href="index.html">Home</a>
+			          	</li>
+	          			<li class="nav-item">
+					      <a class="nav-link" href="about.html">About</a>
+					    </li>
+					    <li class="nav-item">
+					      <a class="nav-link" href="product.html">Products</a>
+					    </li>
+					    <li class="nav-item dropdown">
+					        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+					        Services
+					        </a>
+					        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					          <a class="dropdown-item" href="#">Service1</a>
+					          <a class="dropdown-item" href="#">Service2</a>
+					          <a class="dropdown-item" href="#">Service3</a>
+					          <a class="dropdown-item" href="#">Service4</a>
+					        </div>
+					    </li>
+					    <li class="nav-item">
+					      <a class="nav-link" href="#" data-toggle="modal" data-target="#account-modal" data-case="feedback">Feedback</a>
+					    </li>
+					    <li class="nav-item">
+					      <a class="nav-link" href="login.html">Register/Login</a>
+					    </li>
+	        		</ul>
+	      		</div>
+      		</div>
+    	</nav>
+
+		<div class="home-hero">
+	    	<div class="container">
+	    		<div class="row">
+	    			<div class="col-md-12">
+	    				<div class="content-box">
+	    					<center><h1 class="head-title"><u>PRODUCTS</u></h1></center>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+
+		<div class="container">
+			<table class="table table-bordered">
+				<thead>
+				    <tr>
+				      <th scope="col">Product Id</th>
+				      <th scope="col">Product Name</th>
+				      <th scope="col">Description</th>
+				      <th scope="col">Price</th>
+				    </tr>
+				</thead>
+				<tbody>
+				    <tr>
+				      <th scope="row">1</th>
+				      <td>Product1</td>
+				      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				      tempor incididunt ut labore et dolore magna aliqua.</td>
+				      <td>1234</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">2</th>
+				      <td>Product2</td>
+				      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				      tempor incididunt ut labore et dolore magna aliqua.</td>
+				      <td>1234</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">3</th>
+				      <td>Product3</td>
+				      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				      tempor incididunt ut labore et dolore magna aliqua.</td>
+				      <td>1234</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">4</th>
+				      <td>Product4</td>
+				      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				      tempor incididunt ut labore et dolore magna aliqua.</td>
+				      <td>1234</td>
+				    </tr>
+				</tbody>
+			</table>		
+		</div>
+
+
+		<div class="modal fade" id="account-modal">
+ 			<div class="modal-dialog">
+    			<div class="modal-content">
+			      	<div class="modal-body">
+			        	<div class="form-box">
+			        		<div id="feedback-case">
+	    						<h3>Feedback Page</h3>
+	    						<p>Please add your Email and Message below.</p>
+		    					<form method="POST" action="#" class="validate">
+				  					<div class="form-group">
+			    						<label class="form-control-label">E-mail</label>
+			    						<input type="email" class="form-control" data-fv-notempty="true" placeholder="Your Email..">
+				  					</div><!-- .form-group -->
+				  					<div class="form-group">
+			    						<label class="form-control-label">Message</label>
+			    						<textarea id="subject" class="form-control" name="subject" placeholder="Write something.." style="height:100px;"></textarea>
+				  					</div><!-- .form-group -->
+								  	<div class="form-group">
+								  		<input type="submit" value="Submit" class="btn btn-green">
+								  		<input type="button" value="Cancel" class="btn btn-green" data-dismiss="modal">
+								  	</div><!-- .form-group -->
+		  						</form>
+	  						</div><!-- #feedback-case -->
+  						</div><!-- .form-box -->
+			      	</div><!-- .modal-body -->
+    			</div><!-- .modal-content -->
+  			</div><!-- .modal-dialog -->
+		</div><!-- .modal -->
+
+		<div class="stickyicon-list">  
+			<a href="#" class="facebook btn" data-toggle="popover" title="Facebook" data-content="Click here for Facebook" data-trigger="hover">   
+			<i class="fa fa-facebook"></i>   
+			</a>   
+			<a href="#" class="twitter btn" data-toggle="popover" title="Twitter" data-content="Click here for Twitter" data-trigger="hover">   
+			<i class="fa fa-twitter"></i>   
+			</a>       
+			<a href="#" class="linkedin btn" data-toggle="popover" title="Linkedin" data-content="Click here for Linkedin" data-trigger="hover">   
+			<i class="fa fa-linkedin"></i>   
+			</a>   
+			<a href="#" class="google btn" data-toggle="popover" title="Google+" data-content="Click here for Google+" data-trigger="hover">   
+			<i class="fa fa-google"></i>   
+			</a>     
+			<a href="#" class="instagram btn" data-toggle="popover" title="Instagram" data-content="Click here for Instagram" data-trigger="hover">   
+			<i class="fa fa-instagram"></i>   
+			</a>                              
+			<a href="#" class="youtube btn" data-toggle="popover" title="YouTube" data-content="Click here for YouTube" data-trigger="hover">   
+			<i class="fa fa-youtube"></i>   
+			</a>   
+		</div>   
+
+		
+		<br><br><br>
+		
+		
+		<footer class="page-footer font-small black fixed-bottom" style="background: black; color: white;">
+			<div class="footer-copyright text-center py-3">© 2021 Copyright:
+				<a href="index.html" style="color: white"> MyCompany.com</a>
+			</div>
+		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>	
+		<script src="js/jquery.site.js"></script>
+		
+		<script src="js/script.js"></script>	
+		<script src="js/tether.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		
+	</body>
+</html>
